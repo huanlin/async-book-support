@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net;
+using System.Threading.Tasks;
 
 namespace DemoSyncToAsync
 {
@@ -7,16 +8,17 @@ namespace DemoSyncToAsync
     {
         static void Main(string[] args)
         {
-            string content = DownloadPage("http://huan-lin.blogspot.com");
+            var task = DownloadPageAsync("http://huan-lin.blogspot.com");
+            string content = task.Result;
 
             Console.WriteLine("網頁內容總共為 {0} 個字元。", content.Length);
             Console.ReadKey();
         }
 
-        static string DownloadPage(string url)
+        static async Task<string> DownloadPageAsync(string url)
         {
             var webClient = new WebClient();  // 須引用 System.Net 命名空間。
-            string content = webClient.DownloadString(url);
+            string content = await webClient.DownloadStringTaskAsync(url);
             return content;
         }
     }
