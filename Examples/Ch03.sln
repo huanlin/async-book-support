@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex01_Sync", "Ex01_Sync\Ex01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex02_Async", "Ex02_Async\Ex02_Async.csproj", "{89E8F36E-5B61-4C0D-A2E0-D6E3D9DEA73B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoSyncToAsync", "DemoSyncToAsync\DemoSyncToAsync.csproj", "{D58A6B91-7283-453F-BEEC-D5927F60C644}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{89E8F36E-5B61-4C0D-A2E0-D6E3D9DEA73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89E8F36E-5B61-4C0D-A2E0-D6E3D9DEA73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89E8F36E-5B61-4C0D-A2E0-D6E3D9DEA73B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D58A6B91-7283-453F-BEEC-D5927F60C644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D58A6B91-7283-453F-BEEC-D5927F60C644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D58A6B91-7283-453F-BEEC-D5927F60C644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D58A6B91-7283-453F-BEEC-D5927F60C644}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
