@@ -30,12 +30,12 @@ namespace Ex02_Async
 
         static async Task<string> DownloadPageAsync(string url)
         {
-            ShowThreadInfo(2, "在 DownloadPage() 中，正要起始非同步工作 DownloadStringTaskAsync()。");
+            ShowThreadInfo(2, "在 DownloadPageAsync() 中，正要起始非同步工作 DownloadStringTaskAsync()。");
 
             var webClient = new WebClient();  // 須引用 System.Net 命名空間。
             string content = await webClient.DownloadStringTaskAsync(url);
 
-            ShowThreadInfo(4, "在 DownloadPage() 中， 已經完成非同步工作 DownloadStringTaskAsync()。");
+            ShowThreadInfo(4, "在 DownloadPageAsync() 中， 已經完成非同步工作 DownloadStringTaskAsync()。");
 
             return content;
         }
