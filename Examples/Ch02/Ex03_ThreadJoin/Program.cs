@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace Ex03_ThreadJoin
 {
@@ -15,26 +11,22 @@ namespace Ex03_ThreadJoin
             Thread t2 = new Thread(MyTask);
             Thread t3 = new Thread(MyTask);
 
-            t1.Start("X");
-            t2.Start("Y");
-            t3.Start("Z");
+            t1.Start("T1");
+            t2.Start("T2");
+            t3.Start("T3");
 
             t1.Join();
             t2.Join();
             t3.Join();
 
-            for (int i = 0; i < 500; i++)
-            {
-                Console.Write(".");
-            }
+            Console.ReadKey();
         }
 
         static void MyTask(object param)
         {
-            for (int i = 0; i < 500; i++)
-            {
-                Console.Write(param);
-            }
+            Console.WriteLine("{0} 已開始執行 MyTask()", param);
+            Thread.Sleep(3000);
+            Console.WriteLine("{0} 即將完成工作", param);
         }
     }
 }
