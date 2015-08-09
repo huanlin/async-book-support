@@ -6,7 +6,7 @@ namespace Ex06_BackgroundThread
     {
         static void Main(string[] args)
         {
-            Thread t = new Thread(MyWork);
+            Thread t = new Thread(MyTask);
             t.IsBackground = true;
             t.Start();
 
