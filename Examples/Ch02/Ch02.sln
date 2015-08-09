@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex07_ThreadPool", "Ex07_Thr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex08_APM", "Ex08_APM\Ex08_APM.csproj", "{694F09FD-125C-4BF0-8F34-12C1501FB719}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex09_EAP", "Ex09_EAP\Ex09_EAP.csproj", "{15EAA771-CAA7-4314-8CA1-269993FBFBE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex09_EAP_WinForms", "Ex09_EAP_WinForms\Ex09_EAP_WinForms.csproj", "{3D0FEE9D-4BC8-43C7-930A-CC27119A708D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{694F09FD-125C-4BF0-8F34-12C1501FB719}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{694F09FD-125C-4BF0-8F34-12C1501FB719}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{694F09FD-125C-4BF0-8F34-12C1501FB719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15EAA771-CAA7-4314-8CA1-269993FBFBE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15EAA771-CAA7-4314-8CA1-269993FBFBE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15EAA771-CAA7-4314-8CA1-269993FBFBE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15EAA771-CAA7-4314-8CA1-269993FBFBE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D0FEE9D-4BC8-43C7-930A-CC27119A708D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0FEE9D-4BC8-43C7-930A-CC27119A708D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0FEE9D-4BC8-43C7-930A-CC27119A708D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0FEE9D-4BC8-43C7-930A-CC27119A708D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

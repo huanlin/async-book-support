@@ -8,7 +8,10 @@ namespace Ex08_APM
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("=== 同步版本 ===");
             DemoSync();
+
+            Console.WriteLine("=== 非同步版本 ===");
             DemoAsync();
             Console.WriteLine("主程式結束。");
         }
@@ -41,7 +44,6 @@ namespace Ex08_APM
 
         static void ReadCompletionCallback(IAsyncResult asyncResult)
         {
-            Console.WriteLine(asyncResult.IsCompleted);
             Console.WriteLine("進入 ReadCompletionCallback() 方法。");
         }
 
