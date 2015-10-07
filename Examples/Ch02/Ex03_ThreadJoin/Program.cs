@@ -19,6 +19,7 @@ namespace Ex03_ThreadJoin
             t2.Join();
             t3.Join();
 
+            Console.WriteLine("t1, t2, t3 已執行完畢"); 
             Console.ReadKey();
         }
 
