@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex09_EAP", "Ex09_EAP\Ex09_E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex09_EAP_WinForms", "Ex09_EAP_WinForms\Ex09_EAP_WinForms.csproj", "{3D0FEE9D-4BC8-43C7-930A-CC27119A708D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex10_Task", "Ex10_Task\Ex10_Task.csproj", "{6547F0A3-DA7D-4A66-B082-ECBA44F5B452}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex10_TaskRun", "Ex10_TaskRun\Ex10_TaskRun.csproj", "{F946D020-0158-4969-92EE-6E61B2987AA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{3D0FEE9D-4BC8-43C7-930A-CC27119A708D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D0FEE9D-4BC8-43C7-930A-CC27119A708D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D0FEE9D-4BC8-43C7-930A-CC27119A708D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6547F0A3-DA7D-4A66-B082-ECBA44F5B452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6547F0A3-DA7D-4A66-B082-ECBA44F5B452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6547F0A3-DA7D-4A66-B082-ECBA44F5B452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6547F0A3-DA7D-4A66-B082-ECBA44F5B452}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F946D020-0158-4969-92EE-6E61B2987AA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F946D020-0158-4969-92EE-6E61B2987AA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F946D020-0158-4969-92EE-6E61B2987AA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F946D020-0158-4969-92EE-6E61B2987AA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
