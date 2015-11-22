@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Net;
 
-namespace Ex01_Sync
+namespace Ex03_Sync
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string content = DownloadPage("http://huan-lin.blogspot.com");
+            string content = MyDownloadPage("http://huan-lin.blogspot.com");
 
             DoOtherWork();
 
@@ -15,7 +15,7 @@ namespace Ex01_Sync
             Console.ReadKey();
         }
 
-        static string DownloadPage(string url)
+        static string MyDownloadPage(string url)
         {
             var webClient = new WebClient();  // 須引用 System.Net 命名空間。
             string content = webClient.DownloadString(url);

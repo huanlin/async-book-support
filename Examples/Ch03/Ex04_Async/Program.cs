@@ -3,7 +3,7 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Ex02_Async
+namespace Ex04_Async
 {
     class Program
     {
