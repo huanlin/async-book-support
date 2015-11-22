@@ -15,7 +15,7 @@ namespace Ex02_TaskContinuationOptions
                 taskA.ContinueWith(
                     antecedentTask =>
                     {
-                        Console.WriteLine("Task A 執行失敗! IsFaulted 屬性={0}", antecedentTask.IsFaulted);
+                        Console.WriteLine("Task A 已失敗! IsFaulted={0}", antecedentTask.IsFaulted);
                     },
                     TaskContinuationOptions.OnlyOnFaulted);
 
@@ -23,7 +23,7 @@ namespace Ex02_TaskContinuationOptions
                 taskA.ContinueWith(
                     antecedentTask =>
                     {
-                        Console.WriteLine("Task A 已取消! IsCanceled 屬性={0}", antecedentTask.IsCanceled);
+                        Console.WriteLine("Task A 已取消! IsCanceled={0}", antecedentTask.IsCanceled);
                     },
                     TaskContinuationOptions.OnlyOnCanceled);
 
@@ -31,7 +31,7 @@ namespace Ex02_TaskContinuationOptions
                 taskA.ContinueWith(
                     antecedentTask =>
                     {
-                        Console.WriteLine("Task A 已完成! IsCompleted 屬性={0}", antecedentTask.IsCompleted);
+                        Console.WriteLine("Task A 已完成! IsCompleted={0}", antecedentTask.IsCompleted);
                     },
                     TaskContinuationOptions.OnlyOnRanToCompletion);
 
