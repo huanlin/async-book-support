@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex02_TaskContinuationOption
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex05_AsyncAndThreads", "Ex05_AsyncAndThreads\Ex05_AsyncAndThreads.csproj", "{959952F6-31E6-463B-AC76-3154940FCBF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex06_AspNetAppDeadlock", "Ex06_AspNetAppDeadlock\Ex06_AspNetAppDeadlock.csproj", "{952724C9-CC7B-47AC-A22D-C185D595B664}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{959952F6-31E6-463B-AC76-3154940FCBF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{959952F6-31E6-463B-AC76-3154940FCBF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{959952F6-31E6-463B-AC76-3154940FCBF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{952724C9-CC7B-47AC-A22D-C185D595B664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{952724C9-CC7B-47AC-A22D-C185D595B664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{952724C9-CC7B-47AC-A22D-C185D595B664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{952724C9-CC7B-47AC-A22D-C185D595B664}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -30,7 +30,7 @@ namespace Ex05_AsyncAndThreads
 
         static async Task<string> MyDownloadPageAsync(string url)
         {
-            ShowThreadInfo(2, "正要呼叫 WebClient.DownloadStringTaskAsync()。");
+            ShowThreadInfo(2, "正要呼叫 WebClient.DownloadStringTaskAsync()。");            
 
             var webClient = new WebClient();
             var task = webClient.DownloadStringTaskAsync(url);

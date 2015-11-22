@@ -17,8 +17,8 @@ namespace Ex03_Sync
 
         static string MyDownloadPage(string url)
         {
-            var webClient = new WebClient();  // 須引用 System.Net 命名空間。
-            string content = webClient.DownloadString(url);
+            var client = new WebClient();  // 須引用 System.Net 命名空間。
+            string content = client.DownloadString(url);
             return content;
         }
 
