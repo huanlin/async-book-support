@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex04_Async", "Ex04_Async\Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex02_TaskContinuationOptions", "Ex02_TaskContinuationOptions\Ex02_TaskContinuationOptions.csproj", "{44D6C537-9A5A-47D3-81A6-EE4F9C4A4B32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex05_AsyncAndThreads", "Ex05_AsyncAndThreads\Ex05_AsyncAndThreads.csproj", "{959952F6-31E6-463B-AC76-3154940FCBF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{44D6C537-9A5A-47D3-81A6-EE4F9C4A4B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44D6C537-9A5A-47D3-81A6-EE4F9C4A4B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44D6C537-9A5A-47D3-81A6-EE4F9C4A4B32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{959952F6-31E6-463B-AC76-3154940FCBF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{959952F6-31E6-463B-AC76-3154940FCBF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{959952F6-31E6-463B-AC76-3154940FCBF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{959952F6-31E6-463B-AC76-3154940FCBF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
