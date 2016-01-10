@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoSyncToAsync", "DemoSyncToAsync\DemoSyncToAsync.csproj", "{D58A6B91-7283-453F-BEEC-D5927F60C644}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex06_AspNetAppDeadlock", "Ex06_AspNetAppDeadlock\Ex06_AspNetAppDeadlock.csproj", "{952724C9-CC7B-47AC-A22D-C185D595B664}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAsyncVoid", "DemoAsyncVoid\DemoAsyncVoid.csproj", "{301D6D98-6B3C-408B-81D2-1DAD7C61F71F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex07_DontFakeAsync", "Ex07_DontFakeAsync\Ex07_DontFakeAsync.csproj", "{FC29081B-4801-4E9B-8090-7B8FC8FE5825}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{301D6D98-6B3C-408B-81D2-1DAD7C61F71F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{301D6D98-6B3C-408B-81D2-1DAD7C61F71F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{301D6D98-6B3C-408B-81D2-1DAD7C61F71F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC29081B-4801-4E9B-8090-7B8FC8FE5825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC29081B-4801-4E9B-8090-7B8FC8FE5825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC29081B-4801-4E9B-8090-7B8FC8FE5825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC29081B-4801-4E9B-8090-7B8FC8FE5825}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

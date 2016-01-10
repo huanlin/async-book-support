@@ -29,5 +29,13 @@ namespace ReturnCompletedTask
         {
             return Task.FromResult("hello");
         }
+
+        public Task<string> GetDataAsync_BeforeDotNet45()
+        {
+            var tcs = new TaskCompletionSource<string>();
+            tcs.SetResult("hello");
+            return tcs.Task;
+        }
+
     }
 }
