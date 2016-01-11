@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReturnCompletedTask", "Retu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWaitAnyTask", "AsyncWaitAnyTask\AsyncWaitAnyTask.csproj", "{15E2269F-EB47-492B-B764-B2C7DFB3D822}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncFactoryMethod", "AsyncFactoryMethod\AsyncFactoryMethod.csproj", "{BF00AB5B-F949-40AA-92A8-4AA24F2DD0E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{15E2269F-EB47-492B-B764-B2C7DFB3D822}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15E2269F-EB47-492B-B764-B2C7DFB3D822}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15E2269F-EB47-492B-B764-B2C7DFB3D822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF00AB5B-F949-40AA-92A8-4AA24F2DD0E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF00AB5B-F949-40AA-92A8-4AA24F2DD0E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF00AB5B-F949-40AA-92A8-4AA24F2DD0E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF00AB5B-F949-40AA-92A8-4AA24F2DD0E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
