@@ -4,28 +4,25 @@ using System.Threading.Tasks;
 
 namespace Ex04_Async
 {
-    class Program
+    static class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
 
-            var task = MyDownloadPageAsync("http://huan-lin.blogspot.com");
+            var task = MyDownloadPageAsync("https://www.huanlintalk.com");
 
             string content = task.Result;
 
             Console.WriteLine("網頁內容總共為 {0} 個字元。", content.Length);
-            Console.ReadKey();
         }
 
         static async Task<string> MyDownloadPageAsync(string url)
         {
-            var webClient = new WebClient();
-
-            var task = webClient.DownloadStringTaskAsync(url);
-
-            string content = await task;
-
-            return content;
+            using (var wc = new WebClient())
+            {
+                var task = wc.DownloadStringTaskAsync(url);
+                return await task;
+            }
         }
     }
 }
