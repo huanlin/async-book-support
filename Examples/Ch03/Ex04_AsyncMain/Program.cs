@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Ex04_AsyncMain
@@ -7,8 +8,7 @@ namespace Ex04_AsyncMain
     static class Program
     {
         static async Task Main()
-        {
-
+        {           
             Console.WriteLine("1: " + DateTime.Now);
 
             var task = MyDownloadPageAsync("https://www.huanlintalk.com");
