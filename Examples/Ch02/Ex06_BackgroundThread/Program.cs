@@ -2,9 +2,9 @@
 
 namespace Ex06_BackgroundThread
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Thread t = new Thread(MyTask);
             t.IsBackground = true;
@@ -14,7 +14,7 @@ namespace Ex06_BackgroundThread
             // 若 t 是背景執行緒，此應用程式會立刻結束。
         }
 
-        static void MyTask()
+        private static void MyTask()
         {
             while (true)
                 ;

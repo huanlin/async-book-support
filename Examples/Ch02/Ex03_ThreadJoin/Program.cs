@@ -3,9 +3,9 @@ using System.Threading;
 
 namespace Ex03_ThreadJoin
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Thread t1 = new Thread(MyTask);
             Thread t2 = new Thread(MyTask);
@@ -19,11 +19,11 @@ namespace Ex03_ThreadJoin
             t2.Join();
             t3.Join();
 
-            Console.WriteLine("t1, t2, t3 已執行完畢"); 
+            Console.WriteLine("t1, t2, t3 已執行完畢");
             Console.ReadKey();
         }
 
-        static void MyTask(object param)
+        private static void MyTask(object param)
         {
             Console.WriteLine("{0} 已開始執行 MyTask()", param);
             Thread.Sleep(3000);

@@ -12,7 +12,7 @@ namespace Ex09_EAP_WinForms
             InitializeComponent();
         }
 
-        void Log(string s, params object[] args)
+        private void Log(string s, params object[] args)
         {
             listBox1.Items.Add(string.Format(s, args));
         }

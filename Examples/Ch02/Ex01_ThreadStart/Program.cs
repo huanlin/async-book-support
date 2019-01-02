@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace Ex01_ThreadStart
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Thread t1 = new Thread(MyTask);
             t1.Start();
@@ -20,7 +16,7 @@ namespace Ex01_ThreadStart
             }
         }
 
-        static void MyTask()
+        private static void MyTask()
         {
             for (int i = 0; i < 500; i++)
             {

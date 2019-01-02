@@ -4,9 +4,9 @@ using System.Threading;
 
 namespace Ex09_EAP
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.WriteLine("=== 同步版本 ===");
             DemoSync();
@@ -15,7 +15,7 @@ namespace Ex09_EAP
             DemoAsync();
         }
 
-        static void DemoSync()
+        private static void DemoSync()
         {
             using (var client = new WebClient())
             {
@@ -24,7 +24,7 @@ namespace Ex09_EAP
             }
         }
 
-        static void DemoAsync()
+        private static void DemoAsync()
         {
             using (var client = new WebClient())
             {
@@ -36,7 +36,7 @@ namespace Ex09_EAP
             }
         }
 
-        static void WebDownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
+        private static void WebDownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
             // Note: 可以在這裡撰寫更新 UI 的程式碼，而無須額外寫程式切換至 UI 執行緒（參考 Ex09_EAP_WinForms.csproj）。
             if (e.Cancelled)
@@ -48,7 +48,7 @@ namespace Ex09_EAP
                 Console.WriteLine("非同步工作發生錯誤：" + e.Error.Message);
             }
             else
-            {                
+            {
                 Console.WriteLine("下載的網頁內容長度為 {0} 字元。", e.Result.Length);
             }
         }

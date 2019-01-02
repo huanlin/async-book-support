@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace Ex02_ParamThreadStart
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Thread t1 = new Thread(MyTask);
             Thread t2 = new Thread(MyTask);
@@ -25,7 +21,7 @@ namespace Ex02_ParamThreadStart
             }
         }
 
-        static void MyTask(object param)
+        private static void MyTask(object param)
         {
             for (int i = 0; i < 500; i++)
             {

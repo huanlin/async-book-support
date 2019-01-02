@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 
 namespace Ex10_TaskRun
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Task task = Task.Run(() =>
                 {

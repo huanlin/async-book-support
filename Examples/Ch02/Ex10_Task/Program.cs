@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 
 namespace Ex10_Task
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var task = new Task(MyTask);
             task.Start();
@@ -17,7 +17,7 @@ namespace Ex10_Task
             }
         }
 
-        static void MyTask()
+        private static void MyTask()
         {
             for (int i = 0; i < 500; i++)
             {

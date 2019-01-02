@@ -3,9 +3,9 @@ using System.Threading;
 
 namespace Ex07_ThreadPool
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             ThreadPool.QueueUserWorkItem(new WaitCallback(MyTask));
 
@@ -15,7 +15,7 @@ namespace Ex07_ThreadPool
             }
         }
 
-        static void MyTask(object state)
+        private static void MyTask(object state)
         {
             for (int i = 0; i < 500; i++)
             {
