@@ -4,15 +4,15 @@ using System.Threading.Tasks;
 
 namespace AsyncLambda
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             // 此委派方法需傳入一個 string，且回傳一個 Task<string>。
-            Func<string, Task<string>> downloadPageAsync = 
+            Func<string, Task<string>> downloadPageAsync =
                 async (string url) =>       // 非同步 Lambda
                 {
-                    using (var client = new HttpClient()) 
+                    using (var client = new HttpClient())
                     {
                         return await client.GetStringAsync(url);
                     }

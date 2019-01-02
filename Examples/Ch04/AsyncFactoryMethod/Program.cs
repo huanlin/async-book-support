@@ -2,14 +2,14 @@
 
 namespace AsyncFactoryMethod
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
         }
     }
 
-    class Foo
+    internal class Foo
     {
         private Foo()   // 把建構函式宣告成 private，不讓外界使用。
         {
@@ -27,6 +27,5 @@ namespace AsyncFactoryMethod
             //await DomSomeTaskAsync();
             return this;
         }
-
     }
 }

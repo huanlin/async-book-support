@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 
 namespace AsyncWaitAllTasks
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Task.Run(DemoWaitAll);
             Task.Run(DemoWaitAllResults);
@@ -13,7 +13,7 @@ namespace AsyncWaitAllTasks
             Console.ReadLine();
         }
 
-        static async Task DemoWaitAll()
+        private static async Task DemoWaitAll()
         {
             Console.WriteLine("DemoWaitAll() 開始");
 
@@ -26,7 +26,7 @@ namespace AsyncWaitAllTasks
             Console.WriteLine("DemoWaitAll() 結束");
         }
 
-        static async Task DemoWaitAllResults()
+        private static async Task DemoWaitAllResults()
         {
             Console.WriteLine("DemoWaitAllResults() 開始");
 
@@ -35,13 +35,12 @@ namespace AsyncWaitAllTasks
             Task<int> task3 = Task.FromResult(5);
 
             int[] results = await Task.WhenAll<int>(task1, task2, task3);
-            
+
             foreach (int num in results)
             {
                 Console.WriteLine("{0}", num);
             }
             Console.WriteLine("DemoWaitAllResults() 結束");
         }
-
     }
 }

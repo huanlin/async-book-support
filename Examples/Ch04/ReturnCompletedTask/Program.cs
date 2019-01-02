@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 
 namespace ReturnCompletedTask
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Task.Run(async () =>
             {
@@ -18,12 +18,12 @@ namespace ReturnCompletedTask
         }
     }
 
-    interface IMyCache
+    internal interface IMyCache
     {
         Task<string> GetDataAsync();
     }
 
-    class MyCache : IMyCache
+    internal class MyCache : IMyCache
     {
         public Task<string> GetDataAsync()
         {
@@ -36,6 +36,5 @@ namespace ReturnCompletedTask
             tcs.SetResult("hello");
             return tcs.Task;
         }
-
     }
 }

@@ -4,15 +4,15 @@ using System.Threading.Tasks;
 
 namespace AsyncWaitAllTasks
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Task.Run(DemoWaitAny);
             Console.ReadLine();
         }
 
-        static async Task DemoWaitAny()
+        private static async Task DemoWaitAny()
         {
             Console.WriteLine("DemoWaitAny() 開始");
 

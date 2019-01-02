@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 
 namespace AsyncDelayAndRetry
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Task task = Task.Run(() => MyDownloadPageAsync("xyz"));
 
@@ -20,7 +20,7 @@ namespace AsyncDelayAndRetry
             Console.ReadLine();
         }
 
-        static async Task<string> MyDownloadPageAsync(string url)
+        private static async Task<string> MyDownloadPageAsync(string url)
         {
             const int MaxRetryCount = 3;  // 最多重試 3 次
 
@@ -35,7 +35,7 @@ namespace AsyncDelayAndRetry
                     catch (Exception ex)
                     {
                         // 忽略錯誤。
-                        Console.WriteLine("第 {0} 次失敗: {1}", i+1, ex.Message);
+                        Console.WriteLine("第 {0} 次失敗: {1}", i + 1, ex.Message);
                     }
                     await Task.Delay(TimeSpan.FromSeconds(i + 1));
                 }
