@@ -9,7 +9,7 @@ namespace Ex06_AspNetAppDeadlock.Controllers
         [HttpGet]
         public HttpResponseMessage DownloadPage()
         {
-            var task = MyDownloadPageAsync("http://huan-lin.blogspot.com");
+            var task = MyDownloadPageAsync("https://www.huanlintalk.com");
             var content = task.Result;
             return Request.CreateResponse(string.Format("網頁內容總共為 {0} 個字元。", content.Length));
         }

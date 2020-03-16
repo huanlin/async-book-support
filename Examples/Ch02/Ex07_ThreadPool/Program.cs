@@ -7,7 +7,7 @@ namespace Ex07_ThreadPool
     {
         private static void Main(string[] args)
         {
-            ThreadPool.QueueUserWorkItem(new WaitCallback(MyTask));
+            ThreadPool.QueueUserWorkItem(MyTask);
 
             for (int i = 0; i < 500; i++)
             {
