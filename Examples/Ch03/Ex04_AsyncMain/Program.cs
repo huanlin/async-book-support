@@ -8,17 +8,9 @@ namespace Ex04_AsyncMain
     static class Program
     {
         static async Task Main()
-        {           
-            Console.WriteLine("1: " + DateTime.Now);
-
-            var task = MyDownloadPageAsync("https://www.huanlintalk.com");
-
-            Console.WriteLine("2: " + DateTime.Now);
-
-            string content = await task;
-
-            Console.WriteLine("3: " + DateTime.Now);
-
+        {
+            var url = "https://www.huanlintalk.com";
+            var content = await MyDownloadPageAsync(url);
             Console.WriteLine("網頁內容總共為 {0} 個字元。", content.Length);
         }
 
@@ -26,7 +18,6 @@ namespace Ex04_AsyncMain
         {
             using (var wc = new WebClient())
             {
-                await Task.Delay(3000); // 非同步延遲三秒
                 return await wc.DownloadStringTaskAsync(url);
             }
         }
