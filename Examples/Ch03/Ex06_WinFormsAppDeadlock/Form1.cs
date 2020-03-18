@@ -20,12 +20,12 @@ namespace Ex06_WinFormsAppDeadlock
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label1.Text = GetString().Result; // 程式會當掉!
+            label1.Text = GetStringAsync().Result; // 程式會當掉!
         }
 
         static HttpClient _httpClient = new HttpClient();
 
-        private async Task<string> GetString()
+        private async Task<string> GetStringAsync()
         {
             return await _httpClient.GetStringAsync("https://www.google.com");
         }
