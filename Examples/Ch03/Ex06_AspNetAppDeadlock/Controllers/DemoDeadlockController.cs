@@ -14,14 +14,17 @@ namespace Ex06_AspNetAppDeadlock.Controllers
             return Request.CreateResponse(string.Format("網頁內容總共為 {0} 個字元。", content.Length));
         }
 
+        static HttpClient _httpClient = new HttpClient();
+
         private async Task<string> MyDownloadPageAsync(string url)
         {
-            var client = new HttpClient();
-            string content = await client.GetStringAsync(url); // 這裡會 deadlock!
-            return System.Threading.Thread.CurrentThread.ManagedThreadId.ToString(); //content;
+            string content = await _httpClient.GetStringAsync(url); // 這裡會 deadlock!
+            return content;
+
+            // return System.Threading.Thread.CurrentThread.ManagedThreadId.ToString();
         }
 
-        // 解法一：使用 Task.ConfigureAwait(false)。
-        // 解法二：從頭到尾都使用 async 方法。
+        // 解法一：使用 Task.ConfigureAwait(false)。此解法有副作用，不是好方法。
+        // 解法二：從頭到尾都使用 async 方法。這是正解。
     }
 }

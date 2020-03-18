@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoSyncToAsync", "DemoSyncToAsync\DemoSyncToAsync.csproj", "{D58A6B91-7283-453F-BEEC-D5927F60C644}"
 EndProject
@@ -13,15 +13,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex04_Async", "Ex04_Async\Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex02_TaskContinuationOptions", "Ex02_TaskContinuationOptions\Ex02_TaskContinuationOptions.csproj", "{44D6C537-9A5A-47D3-81A6-EE4F9C4A4B32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex05_AsyncAndThreads", "Ex05_AsyncAndThreads\Ex05_AsyncAndThreads.csproj", "{959952F6-31E6-463B-AC76-3154940FCBF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex05_AsyncAndThreads", "Ex05_AsyncAndThreads\Ex05_AsyncAndThreads.csproj", "{959952F6-31E6-463B-AC76-3154940FCBF9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex06_AspNetAppDeadlock", "Ex06_AspNetAppDeadlock\Ex06_AspNetAppDeadlock.csproj", "{952724C9-CC7B-47AC-A22D-C185D595B664}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoAsyncVoid", "DemoAsyncVoid\DemoAsyncVoid.csproj", "{301D6D98-6B3C-408B-81D2-1DAD7C61F71F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex07_DontFakeAsync", "Ex07_DontFakeAsync\Ex07_DontFakeAsync.csproj", "{FC29081B-4801-4E9B-8090-7B8FC8FE5825}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex07_DontFakeAsync", "Ex07_DontFakeAsync\Ex07_DontFakeAsync.csproj", "{FC29081B-4801-4E9B-8090-7B8FC8FE5825}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex04_AsyncMain", "Ex04_AsyncMain\Ex04_AsyncMain.csproj", "{07428670-786F-4BAA-B433-C8C6402A22CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex06_WinFormsAppDeadlock", "Ex06_WinFormsAppDeadlock\Ex06_WinFormsAppDeadlock.csproj", "{4B968151-68DF-4E7E-A5F3-D91FB993E7D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{07428670-786F-4BAA-B433-C8C6402A22CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07428670-786F-4BAA-B433-C8C6402A22CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07428670-786F-4BAA-B433-C8C6402A22CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B968151-68DF-4E7E-A5F3-D91FB993E7D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B968151-68DF-4E7E-A5F3-D91FB993E7D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B968151-68DF-4E7E-A5F3-D91FB993E7D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B968151-68DF-4E7E-A5F3-D91FB993E7D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
