@@ -20,29 +20,28 @@ namespace AsyncDelayAndRetry
             Console.ReadLine();
         }
 
+        static HttpClient _httpClient = new HttpClient();
+
         private static async Task<string> MyDownloadPageAsync(string url)
         {
             const int MaxRetryCount = 3;  // 最多重試 3 次
 
-            using (var client = new HttpClient()) // 先前範例都省略 using，這裡補上。
+            for (int i = 0; i < MaxRetryCount; i++)
             {
-                for (int i = 0; i < MaxRetryCount; i++)
+                try
                 {
-                    try
-                    {
-                        return await client.GetStringAsync(url);
-                    }
-                    catch (Exception ex)
-                    {
-                        // 忽略錯誤。
-                        Console.WriteLine("第 {0} 次失敗: {1}", i + 1, ex.Message);
-                    }
-                    await Task.Delay(TimeSpan.FromSeconds(i + 1));
+                    return await _httpClient.GetStringAsync(url);
                 }
-
-                // 最後一次失敗就讓它拋出異常。
-                return await client.GetStringAsync(url);
+                catch (Exception ex)
+                {
+                    // 忽略錯誤。
+                    Console.WriteLine($"第 {i+1} 次失敗: {ex.Message}");
+                }
+                await Task.Delay(TimeSpan.FromSeconds(i + 1));
             }
+
+            // 最後一次失敗就讓它拋出異常。
+            return await _httpClient.GetStringAsync(url);
         }
     }
 }

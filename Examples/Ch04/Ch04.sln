@@ -1,21 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncDelay", "AsyncDelay\AsyncDelay.csproj", "{B2B4B78F-0F79-40CC-918F-DE4B2F30E384}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncDelay", "AsyncDelay\AsyncDelay.csproj", "{B2B4B78F-0F79-40CC-918F-DE4B2F30E384}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncDelayAndRetry", "AsyncDelayAndRetry\AsyncDelayAndRetry.csproj", "{9CE99695-20B6-494B-B741-DFF0FBE3280D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncDelayAndRetry", "AsyncDelayAndRetry\AsyncDelayAndRetry.csproj", "{9CE99695-20B6-494B-B741-DFF0FBE3280D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncLambda", "AsyncLambda\AsyncLambda.csproj", "{E491CE43-1DCE-4904-A9FA-827CAE3DB99F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncLambda", "AsyncLambda\AsyncLambda.csproj", "{E491CE43-1DCE-4904-A9FA-827CAE3DB99F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWaitAllTasks", "AsyncWaitAllTasks\AsyncWaitAllTasks.csproj", "{A29840E6-C30D-4B50-9AB7-CC0A3128046B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncWaitAllTasks", "AsyncWaitAllTasks\AsyncWaitAllTasks.csproj", "{A29840E6-C30D-4B50-9AB7-CC0A3128046B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReturnCompletedTask", "ReturnCompletedTask\ReturnCompletedTask.csproj", "{C61DEF90-8B45-4905-A2F7-B5AA73F55AF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReturnCompletedTask", "ReturnCompletedTask\ReturnCompletedTask.csproj", "{C61DEF90-8B45-4905-A2F7-B5AA73F55AF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWaitAnyTask", "AsyncWaitAnyTask\AsyncWaitAnyTask.csproj", "{15E2269F-EB47-492B-B764-B2C7DFB3D822}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncWaitAnyTask", "AsyncWaitAnyTask\AsyncWaitAnyTask.csproj", "{15E2269F-EB47-492B-B764-B2C7DFB3D822}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncFactoryMethod", "AsyncFactoryMethod\AsyncFactoryMethod.csproj", "{BF00AB5B-F949-40AA-92A8-4AA24F2DD0E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncFactoryMethod", "AsyncFactoryMethod\AsyncFactoryMethod.csproj", "{BF00AB5B-F949-40AA-92A8-4AA24F2DD0E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex01_TaskContinuation", "Ex01_TaskContinuation\Ex01_TaskContinuation.csproj", "{A1301D87-29ED-443D-9E17-7272E24DB589}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,8 +53,15 @@ Global
 		{BF00AB5B-F949-40AA-92A8-4AA24F2DD0E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF00AB5B-F949-40AA-92A8-4AA24F2DD0E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF00AB5B-F949-40AA-92A8-4AA24F2DD0E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1301D87-29ED-443D-9E17-7272E24DB589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1301D87-29ED-443D-9E17-7272E24DB589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1301D87-29ED-443D-9E17-7272E24DB589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1301D87-29ED-443D-9E17-7272E24DB589}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23E8AC56-D9ED-40B4-A333-28EDDA1BC773}
 	EndGlobalSection
 EndGlobal

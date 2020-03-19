@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Ex01_TaskContinuation
@@ -7,27 +8,23 @@ namespace Ex01_TaskContinuation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("程式開始");
+            var taskA = Task.Run(() => Console.WriteLine("起始工作...."));
 
-            Task taskA =
-                Task.Run(
-                    () => Console.WriteLine("開始 Task A...."))
-                .ContinueWith(
-                    antecedentTask => 
-                    {
-                        Console.WriteLine("從 Task A 接續的工作....");
-                        System.Threading.Thread.Sleep(4000); // 等待幾秒
-                    } );
+            Task taskB = taskA.ContinueWith( antecedentTask => 
+                {
+                    Console.WriteLine("從 Task A 接續 Task B.");
+                    System.Threading.Thread.Sleep(4000); // 等待幾秒
+                } );
 
-            Task taskB =
-                taskA.ContinueWith(
-                    antecedentTask =>
-                    {
-                        Console.WriteLine("從 Task A 接續開始 Task B....");
-                    } );
-            Task taskC = 
-                taskA.ContinueWith(
-                    antecedentTask => Console.WriteLine("從 Task A 接續開始 Task C....") );
+            Task taskC = taskA.ContinueWith( antecedentTask =>
+                {
+                    Console.WriteLine("從 Task A 接續 Task C.");
+                } );
+
+            Task taskD = taskA.ContinueWith( antecedentTask =>
+                {
+                    Console.WriteLine("從 Task A 接續開始 Task D.");
+                });
 
             Task.WaitAll(taskB, taskC);
 
