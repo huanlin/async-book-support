@@ -12,6 +12,8 @@ namespace DemoChainedContinuationAndCancellation
             var cancelToken = new CancellationTokenSource();
             Task taskB = taskA.ContinueWith(
                 _ => Console.WriteLine("這裡不會執行"), cancelToken.Token);
+                // 用底下這行取代上一行，便可確保 taskC 在 taskA 完成後才執行。
+                //_ => Console.WriteLine("這裡不會執行"), cancelToken.Token, TaskContinuationOptions.LazyCancellation, TaskScheduler.Current);
             Task taskC = taskB.ContinueWith(
                 _ => Console.WriteLine("TaskC 執行完畢。"));
             cancelToken.Cancel(); // 取消 taskB
