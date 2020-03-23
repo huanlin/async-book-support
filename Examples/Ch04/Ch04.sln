@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncFactoryMethod", "Async
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex01_TaskContinuation", "Ex01_TaskContinuation\Ex01_TaskContinuation.csproj", "{A1301D87-29ED-443D-9E17-7272E24DB589}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoChainedContinuationAndCancellation", "DemoChainedContinuationAndCancellation\DemoChainedContinuationAndCancellation.csproj", "{6014497C-9F39-49CB-8FB1-3D258254AE83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{A1301D87-29ED-443D-9E17-7272E24DB589}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1301D87-29ED-443D-9E17-7272E24DB589}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1301D87-29ED-443D-9E17-7272E24DB589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6014497C-9F39-49CB-8FB1-3D258254AE83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6014497C-9F39-49CB-8FB1-3D258254AE83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6014497C-9F39-49CB-8FB1-3D258254AE83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6014497C-9F39-49CB-8FB1-3D258254AE83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
