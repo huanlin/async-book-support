@@ -1,9 +1,6 @@
-ï»¿using System;
 using System.Net;
-using System.Threading;
-using System.Windows.Forms;
 
-namespace Ex09_EAP_WinForms
+namespace Ex09_EAP_WinForms2
 {
     public partial class Form1 : Form
     {
@@ -19,19 +16,18 @@ namespace Ex09_EAP_WinForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Log("UI åŸ·è¡Œç·’ ID: {0}", Thread.CurrentThread.ManagedThreadId);
+            Log("UI °õ¦æºü ID: {0}", Thread.CurrentThread.ManagedThreadId);
             using (var client = new WebClient())
             {
                 client.DownloadStringCompleted += WebDownloadStringCompleted;
                 client.DownloadStringAsync(new Uri("http://huan-lin.blogspot.com"));
             }
         }
-
         private void WebDownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            // Note: å¯ä»¥åœ¨é€™è£¡æ’°å¯«æ›´æ–° UI çš„ç¨‹å¼ç¢¼ï¼Œè€Œç„¡é ˆé¡å¤–å¯«ç¨‹å¼åˆ‡æ›è‡³ UI åŸ·è¡Œç·’ã€‚
-            Log("éåŒæ­¥å·¥ä½œå®Œæˆäº‹ä»¶è§¸ç™¼æ–¼åŸ·è¡Œç·’ ID: {0}", Thread.CurrentThread.ManagedThreadId);
-            label1.Text = string.Format("ä¸‹è¼‰çš„ç¶²é å…§å®¹é•·åº¦ç‚º {0} å­—å…ƒã€‚", e.Result.Length);
+            // Note: ¥i¥H¦b³o¸Ì¼¶¼g§ó·s UI ªºµ{¦¡½X¡A¦ÓµL¶·ÃB¥~¼gµ{¦¡¤Á´«¦Ü UI °õ¦æºü¡C
+            Log("«D¦P¨B¤u§@§¹¦¨¨Æ¥óÄ²µo©ó°õ¦æºü ID: {0}", Thread.CurrentThread.ManagedThreadId);
+            label1.Text = string.Format("¤U¸üªººô­¶¤º®eªø«×¬° {0} ¦r¤¸¡C", e.Result.Length);
         }
     }
 }
