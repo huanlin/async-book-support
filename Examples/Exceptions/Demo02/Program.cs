@@ -1,17 +1,19 @@
 ﻿
-await MyMethod();
+try
+{
+    await MyMethod();
+}
+catch (Exception ex)
+{
+    Console.WriteLine("捕捉到異常! " + ex.GetType().FullName);
+}
+
 
 async Task MyMethod()
 {
-    try
-    {
-        await new HttpClient().GetStringAsync("https://microsoft.com");
-        throw new NotImplementedException();
-    }
-    catch
-    {
-        Console.WriteLine("捕捉到異常!");
-    }
+    await new HttpClient().GetStringAsync("https://microsoft.com");
+    await File.ReadAllBytesAsync("file.txt");
+    throw new NotImplementedException();
 }
 
 // Output: 捕捉到異常! 
