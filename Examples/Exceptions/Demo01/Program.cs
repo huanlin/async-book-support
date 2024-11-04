@@ -15,7 +15,8 @@ void MyMethod()
             throw new NotImplementedException();
         });
 
-        task.Wait();
+        // 將以下程式碼取消註解，再觀察執行結果。
+        // task.Wait();
     }
     catch (Exception ex) 
     {
@@ -24,6 +25,6 @@ void MyMethod()
 }
 
 
-// Output: (注意程式並未顯示補捉到異常!)
+// Output: (注意程式是否顯示補捉到異常!)
 // Main thread ID: 1
 // Worker thread ID: 6
